@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct ContentView: View {
+	@State var liked: Bool = false
+	
     var body: some View {
 		ZStack {
 			Image("avocado_toast")
@@ -22,9 +24,14 @@ struct ContentView: View {
 						.shadow(color: Color.black, radius: 3, x: 3, y: 3)
 						.padding(.horizontal)
 					Spacer()
-					Image("heart")
-						.resizable()
-						.frame(width: 40, height: 40)
+					Button(action: {
+						self.liked.toggle()
+					}) {
+						Image(self.liked ? "heart-selected" : "heart")
+							.resizable()
+							.frame(width: 40, height: 40)
+							.foregroundColor(self.liked ? .red : .white)
+					}
 				}
 				.padding()
 				Spacer()
