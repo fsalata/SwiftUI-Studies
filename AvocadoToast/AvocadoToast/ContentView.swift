@@ -28,22 +28,28 @@ struct ContentView: View {
 						self.liked.toggle()
 					}) {
 						Image(self.liked ? "heart-selected" : "heart")
+							.renderingMode(self.liked ? .original : .none)
 							.resizable()
 							.frame(width: 40, height: 40)
-							.foregroundColor(self.liked ? .red : .white)
+							.foregroundColor(self.liked ? nil : .white)
 					}
 				}
 				.padding()
 				Spacer()
 				Text("Energize with the healthy and hearty breakfast")
 					.foregroundColor(.white)
+					.padding(.bottom, 20)
+					.padding(.horizontal, 10)
 			}
 		}
+		.cornerRadius(30)
+		.padding()
+		.shadow(color: .black, radius: 10, x: 0, y: 0)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+		ContentView()
     }
 }
