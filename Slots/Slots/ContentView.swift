@@ -26,6 +26,7 @@ struct ContentView: View {
 				.foregroundColor(.green)
 				.rotationEffect(Angle(degrees: 45))
 				.edgesIgnoringSafeArea(.all)
+				.shadow(color: Color.black.opacity(0.3), radius: 10, x: 0, y: 0)
 			
 			VStack {
 				Spacer()
