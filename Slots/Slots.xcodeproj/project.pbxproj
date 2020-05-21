@@ -7,28 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00289A362475D0570091A2C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00289A352475D0570091A2C8 /* AppDelegate.swift */; };
-		00289A382475D0570091A2C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00289A372475D0570091A2C8 /* SceneDelegate.swift */; };
-		00289A3A2475D0570091A2C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00289A392475D0570091A2C8 /* ContentView.swift */; };
-		00289A3C2475D0580091A2C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00289A3B2475D0580091A2C8 /* Assets.xcassets */; };
-		00289A3F2475D0580091A2C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00289A3E2475D0580091A2C8 /* Preview Assets.xcassets */; };
-		00289A422475D0580091A2C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00289A402475D0580091A2C8 /* LaunchScreen.storyboard */; };
+		00867FC22476EBC200781E79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00867FC12476EBC200781E79 /* AppDelegate.swift */; };
+		00867FC42476EBC200781E79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00867FC32476EBC200781E79 /* SceneDelegate.swift */; };
+		00867FC62476EBC200781E79 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00867FC52476EBC200781E79 /* ContentView.swift */; };
+		00867FC82476EBC400781E79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00867FC72476EBC400781E79 /* Assets.xcassets */; };
+		00867FCB2476EBC400781E79 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00867FCA2476EBC400781E79 /* Preview Assets.xcassets */; };
+		00867FCE2476EBC400781E79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00867FCC2476EBC400781E79 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		00289A322475D0570091A2C8 /* AvocadoToast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvocadoToast.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		00289A352475D0570091A2C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		00289A372475D0570091A2C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		00289A392475D0570091A2C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		00289A3B2475D0580091A2C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		00289A3E2475D0580091A2C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		00289A412475D0580091A2C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		00289A432475D0580091A2C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00867FB42476E24A00781E79 /* AvocadoToast.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AvocadoToast.entitlements; sourceTree = "<group>"; };
+		00867FBE2476EBC200781E79 /* Slots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Slots.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00867FC12476EBC200781E79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		00867FC32476EBC200781E79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		00867FC52476EBC200781E79 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		00867FC72476EBC400781E79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00867FCA2476EBC400781E79 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		00867FCD2476EBC400781E79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00867FCF2476EBC400781E79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		00289A2F2475D0570091A2C8 /* Frameworks */ = {
+		00867FBB2476EBC200781E79 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,41 +37,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00289A292475D0570091A2C8 = {
+		00867FB52476EBC200781E79 = {
 			isa = PBXGroup;
 			children = (
-				00289A342475D0570091A2C8 /* AvocadoToast */,
-				00289A332475D0570091A2C8 /* Products */,
+				00867FC02476EBC200781E79 /* Slots */,
+				00867FBF2476EBC200781E79 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		00289A332475D0570091A2C8 /* Products */ = {
+		00867FBF2476EBC200781E79 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				00289A322475D0570091A2C8 /* AvocadoToast.app */,
+				00867FBE2476EBC200781E79 /* Slots.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		00289A342475D0570091A2C8 /* AvocadoToast */ = {
+		00867FC02476EBC200781E79 /* Slots */ = {
 			isa = PBXGroup;
 			children = (
-				00867FB42476E24A00781E79 /* AvocadoToast.entitlements */,
-				00289A352475D0570091A2C8 /* AppDelegate.swift */,
-				00289A372475D0570091A2C8 /* SceneDelegate.swift */,
-				00289A392475D0570091A2C8 /* ContentView.swift */,
-				00289A3B2475D0580091A2C8 /* Assets.xcassets */,
-				00289A402475D0580091A2C8 /* LaunchScreen.storyboard */,
-				00289A432475D0580091A2C8 /* Info.plist */,
-				00289A3D2475D0580091A2C8 /* Preview Content */,
+				00867FC12476EBC200781E79 /* AppDelegate.swift */,
+				00867FC32476EBC200781E79 /* SceneDelegate.swift */,
+				00867FC52476EBC200781E79 /* ContentView.swift */,
+				00867FC72476EBC400781E79 /* Assets.xcassets */,
+				00867FCC2476EBC400781E79 /* LaunchScreen.storyboard */,
+				00867FCF2476EBC400781E79 /* Info.plist */,
+				00867FC92476EBC400781E79 /* Preview Content */,
 			);
-			path = AvocadoToast;
+			path = Slots;
 			sourceTree = "<group>";
 		};
-		00289A3D2475D0580091A2C8 /* Preview Content */ = {
+		00867FC92476EBC400781E79 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				00289A3E2475D0580091A2C8 /* Preview Assets.xcassets */,
+				00867FCA2476EBC400781E79 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -80,39 +78,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00289A312475D0570091A2C8 /* AvocadoToast */ = {
+		00867FBD2476EBC200781E79 /* Slots */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00289A462475D0580091A2C8 /* Build configuration list for PBXNativeTarget "AvocadoToast" */;
+			buildConfigurationList = 00867FD22476EBC400781E79 /* Build configuration list for PBXNativeTarget "Slots" */;
 			buildPhases = (
-				00289A2E2475D0570091A2C8 /* Sources */,
-				00289A2F2475D0570091A2C8 /* Frameworks */,
-				00289A302475D0570091A2C8 /* Resources */,
+				00867FBA2476EBC200781E79 /* Sources */,
+				00867FBB2476EBC200781E79 /* Frameworks */,
+				00867FBC2476EBC200781E79 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = AvocadoToast;
-			productName = AvocadoToast;
-			productReference = 00289A322475D0570091A2C8 /* AvocadoToast.app */;
+			name = Slots;
+			productName = Slots;
+			productReference = 00867FBE2476EBC200781E79 /* Slots.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		00289A2A2475D0570091A2C8 /* Project object */ = {
+		00867FB62476EBC200781E79 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Fábio Salata";
 				TargetAttributes = {
-					00289A312475D0570091A2C8 = {
-						CreatedOnToolsVersion = 11.4.1;
+					00867FBD2476EBC200781E79 = {
+						CreatedOnToolsVersion = 11.5;
 					};
 				};
 			};
-			buildConfigurationList = 00289A2D2475D0570091A2C8 /* Build configuration list for PBXProject "AvocadoToast" */;
+			buildConfigurationList = 00867FB92476EBC200781E79 /* Build configuration list for PBXProject "Slots" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -120,47 +118,47 @@
 				en,
 				Base,
 			);
-			mainGroup = 00289A292475D0570091A2C8;
-			productRefGroup = 00289A332475D0570091A2C8 /* Products */;
+			mainGroup = 00867FB52476EBC200781E79;
+			productRefGroup = 00867FBF2476EBC200781E79 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				00289A312475D0570091A2C8 /* AvocadoToast */,
+				00867FBD2476EBC200781E79 /* Slots */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		00289A302475D0570091A2C8 /* Resources */ = {
+		00867FBC2476EBC200781E79 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00289A422475D0580091A2C8 /* LaunchScreen.storyboard in Resources */,
-				00289A3F2475D0580091A2C8 /* Preview Assets.xcassets in Resources */,
-				00289A3C2475D0580091A2C8 /* Assets.xcassets in Resources */,
+				00867FCE2476EBC400781E79 /* LaunchScreen.storyboard in Resources */,
+				00867FCB2476EBC400781E79 /* Preview Assets.xcassets in Resources */,
+				00867FC82476EBC400781E79 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		00289A2E2475D0570091A2C8 /* Sources */ = {
+		00867FBA2476EBC200781E79 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00289A362475D0570091A2C8 /* AppDelegate.swift in Sources */,
-				00289A382475D0570091A2C8 /* SceneDelegate.swift in Sources */,
-				00289A3A2475D0570091A2C8 /* ContentView.swift in Sources */,
+				00867FC22476EBC200781E79 /* AppDelegate.swift in Sources */,
+				00867FC42476EBC200781E79 /* SceneDelegate.swift in Sources */,
+				00867FC62476EBC200781E79 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		00289A402475D0580091A2C8 /* LaunchScreen.storyboard */ = {
+		00867FCC2476EBC400781E79 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				00289A412475D0580091A2C8 /* Base */,
+				00867FCD2476EBC400781E79 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -168,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		00289A442475D0580091A2C8 /* Debug */ = {
+		00867FD02476EBC400781E79 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -218,7 +216,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -228,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		00289A452475D0580091A2C8 /* Release */ = {
+		00867FD12476EBC400781E79 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -272,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,45 +280,41 @@
 			};
 			name = Release;
 		};
-		00289A472475D0580091A2C8 /* Debug */ = {
+		00867FD32476EBC400781E79 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = AvocadoToast/AvocadoToast.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"AvocadoToast/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Slots/Preview Content\"";
 				DEVELOPMENT_TEAM = 4473R8PQA5;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = AvocadoToast/Info.plist;
+				INFOPLIST_FILE = Slots/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.fabiosalata.AvocadoToast;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.fabiosalata.Slots;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		00289A482475D0580091A2C8 /* Release */ = {
+		00867FD42476EBC400781E79 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = AvocadoToast/AvocadoToast.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"AvocadoToast/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Slots/Preview Content\"";
 				DEVELOPMENT_TEAM = 4473R8PQA5;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = AvocadoToast/Info.plist;
+				INFOPLIST_FILE = Slots/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.fabiosalata.AvocadoToast;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.fabiosalata.Slots;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -329,25 +323,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00289A2D2475D0570091A2C8 /* Build configuration list for PBXProject "AvocadoToast" */ = {
+		00867FB92476EBC200781E79 /* Build configuration list for PBXProject "Slots" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				00289A442475D0580091A2C8 /* Debug */,
-				00289A452475D0580091A2C8 /* Release */,
+				00867FD02476EBC400781E79 /* Debug */,
+				00867FD12476EBC400781E79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		00289A462475D0580091A2C8 /* Build configuration list for PBXNativeTarget "AvocadoToast" */ = {
+		00867FD22476EBC400781E79 /* Build configuration list for PBXNativeTarget "Slots" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				00289A472475D0580091A2C8 /* Debug */,
-				00289A482475D0580091A2C8 /* Release */,
+				00867FD32476EBC400781E79 /* Debug */,
+				00867FD42476EBC400781E79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 00289A2A2475D0570091A2C8 /* Project object */;
+	rootObject = 00867FB62476EBC200781E79 /* Project object */;
 }

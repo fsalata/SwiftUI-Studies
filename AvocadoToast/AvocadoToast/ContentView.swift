@@ -27,11 +27,10 @@ struct ContentView: View {
 					Button(action: {
 						self.liked.toggle()
 					}) {
-						Image(self.liked ? "heart-selected" : "heart")
-							.renderingMode(self.liked ? .original : .none)
+						Image(systemName: self.liked ? "heart.fill" : "heart")
 							.resizable()
-							.frame(width: 40, height: 40)
-							.foregroundColor(self.liked ? nil : .white)
+							.frame(width: 30, height: 30)
+							.foregroundColor(self.liked ? .red : .white)
 					}
 				}
 				.padding()
