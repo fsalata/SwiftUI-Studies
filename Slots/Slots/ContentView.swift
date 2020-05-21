@@ -13,7 +13,7 @@ struct ContentView: View {
 	private let betAmount = 5
 	
 	@State private var numbers = [0, 1, 2]
-	@State private var credits = 100
+	@State private var credits = 500
 	@State private var won = false
 	
 	var body: some View {
@@ -58,29 +58,11 @@ struct ContentView: View {
 				HStack {
 					Spacer()
 					
-					Image(systemName: symbols[numbers[0]])
-						.resizable()
-						.aspectRatio(1, contentMode: .fit)
-						.foregroundColor(numbers[0] > 1 ? Color.red : Color.black)
-						.padding()
-						.background(won ? Color.yellow : Color.white.opacity(0.5))
-						.cornerRadius(20)
+					CardView(symbol: symbols[numbers[0]], number: numbers[0], won: won)
 					
-					Image(systemName: symbols[numbers[1]])
-						.resizable()
-						.aspectRatio(1, contentMode: .fit)
-						.foregroundColor(numbers[1] > 1 ? Color.red : Color.black)
-						.padding()
-						.background(won ? Color.yellow :Color.white.opacity(0.5))
-						.cornerRadius(20)
+					CardView(symbol: symbols[numbers[1]], number: numbers[1], won: won)
 					
-					Image(systemName: symbols[numbers[2]])
-						.resizable()
-						.aspectRatio(1, contentMode: .fit)
-						.foregroundColor(numbers[2] > 1 ? Color.red : Color.black)
-						.padding()
-						.background(won ? Color.yellow :Color.white.opacity(0.5))
-						.cornerRadius(20)
+					CardView(symbol: symbols[numbers[2]], number: numbers[2], won: won)
 					
 					Spacer()
 				}
@@ -91,9 +73,9 @@ struct ContentView: View {
 				Button(action: {
 					self.won = false
 					
-					self.numbers[0] = Int.random(in: 0...self.symbols.count - 1)
-					self.numbers[1] = Int.random(in: 0...self.symbols.count - 1)
-					self.numbers[2] = Int.random(in: 0...self.symbols.count - 1)
+					self.numbers = self.numbers.map({ _ in
+						Int.random(in: 0...self.symbols.count - 1)
+					})
 					
 					if self.numbers[0] == self.numbers[1] && self.numbers[1] == self.numbers[2] {
 						self.credits += self.betAmount * 10
