@@ -15,18 +15,20 @@ struct MemoryGame<CardContent> {
 		cards = Array<Card>()
 		for index in 0..<numberOfPairsOfCards {
 			let content = makeContent(index)
-			let pair = Array(repeating: Card(content: content), count: 2)
+			let pair = [Card(content: content), Card(content: content)]
 			cards.append(contentsOf: pair)
 		}
+		cards.shuffle()
 	}
 	
-	func choose(card: Card) {
-		print("card chosen: \(card)")
+	mutating func choose(card: Card) {
+		let index = cards.firstIndex { $0.id == card.id }!
+		cards[index].isFaceUp = !cards[index].isFaceUp
 	}
 	
 	struct Card: Identifiable {
 		var id = UUID()
-		var isFaceUp: Bool = true
+		var isFaceUp: Bool = false
 		var isMatched: Bool = false
 		var content: CardContent
 	}

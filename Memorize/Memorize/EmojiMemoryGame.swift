@@ -8,8 +8,8 @@
 
 import Foundation
 
-final class EmojiMemoryGame {
-	private var model: MemoryGame<String> = EmojiMemoryGame.createEmojiGame()
+final class EmojiMemoryGame: ObservableObject {
+	@Published private var model: MemoryGame<String> = EmojiMemoryGame.createEmojiGame()
 	
 	static func createEmojiGame() -> MemoryGame<String> {
 		let emojis = ["👻", "🎃", "🕷", "🕸", "👹"]
@@ -19,7 +19,7 @@ final class EmojiMemoryGame {
 	}
 	
 	var cards: Array<MemoryGame<String>.Card> {
-		model.cards.shuffled()
+		model.cards
 	}
 	
 	func choose(_ card: MemoryGame<String>.Card) {
