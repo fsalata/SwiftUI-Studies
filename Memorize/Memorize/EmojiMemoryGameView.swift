@@ -33,7 +33,9 @@ struct CardView: View {
 					RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 3)
 					Text(self.card.content)
 				} else {
-					RoundedRectangle(cornerRadius: 10).fill()
+					if !self.card.isMatched {
+						RoundedRectangle(cornerRadius: 10).fill()
+					}
 				}
 			}
 			.padding(10)
