@@ -6,24 +6,27 @@
 //  Copyright © 2020 Fábio Salata. All rights reserved.
 //
 
-import Foundation
+import SwiftUI
 
-final class EmojiMemoryGame: ObservableObject {
-	@Published private var model: MemoryGame<String> = EmojiMemoryGame.createEmojiGame()
-	
-	static func createEmojiGame() -> MemoryGame<String> {
-		let emojis = ["👻", "🎃", "🕷", "🕸", "👹"]
-		return MemoryGame<String>(numberOfPairsOfCards: 3) { index in
-			return emojis[index]
-		}
-	}
-	
-	var cards: Array<MemoryGame<String>.Card> {
-		model.cards
-	}
-	
-	func choose(_ card: MemoryGame<String>.Card) {
-		model.choose(card: card)
-	}
-	
+
+class EmojiMemoryGame: ObservableObject {
+
+    @Published private var model: MemoryGame<String> = createMemoryGame()
+    
+    var cards: [MemoryGame<String>.Card] {
+        model.cards
+    }
+    
+    static private func createMemoryGame() -> MemoryGame<String> {
+        let emojis = ["😎", "👻", "🎃"]
+		return MemoryGame<String>(numberOfPairsOfCards: emojis.count) { pairIndex in emojis[pairIndex]}
+    }
+    
+    func choose(card: MemoryGame<String>.Card) {
+        model.choose(card: card)
+    }
+    
+    func resetGame() {
+        model = EmojiMemoryGame.createMemoryGame()
+    }
 }
