@@ -44,6 +44,10 @@ struct MoonFlow: View {
                   .frame(width:120, height: 120)
                 Text(moon.name)
               }
+							.rotation3DEffect(
+								.degrees(Double(moonGeometry.frame(in: .global).midX - geometry.size.width / 2) / 3),
+								axis: (x: 0, y: 1, z: 0)
+							)
             }.frame(width:120)
           }
         }

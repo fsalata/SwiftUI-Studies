@@ -47,5 +47,10 @@ struct MoonView: View {
       .frame(width: size, height: size)
       .offset(x: radius * cos(angle),
               y: radius * sin(angle))
+			.onAppear {
+				withAnimation {
+					self.angle = self.targetAngle
+				}
+			}
   }
 }

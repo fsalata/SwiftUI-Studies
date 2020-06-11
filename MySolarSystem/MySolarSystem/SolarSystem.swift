@@ -31,6 +31,7 @@ import SwiftUI
 struct SolarSystem: View {
   var moons: [Moon] { planet.moons }
   let planet: Planet
+	@State private var animationFlag = false
 
   var body: some View {
     GeometryReader { geometry in
@@ -47,9 +48,7 @@ struct SolarSystem: View {
 
 
   func moon(planetSize: CGFloat, moonSize: CGFloat, radiusIncrement: CGFloat, index: CGFloat) -> some View {
-    let angle = CGFloat.random(in: 0 ..< 2 * CGFloat.pi)
-    let moonView = MoonView(angle: angle, size: moonSize, radius: (planetSize + radiusIncrement * index) / 2)
-    return moonView
+		return Circle().fill(Color.orange).frame(width: moonSize, height: moonSize)
   }
 
   func makeSystem(_ geometry: GeometryProxy) -> some View {
@@ -70,9 +69,66 @@ struct SolarSystem: View {
         ForEach(range, id: \.self) { index in
           // individual "moon" circles
           self.moon(planetSize: planetSize, moonSize: moonSize, radiusIncrement: radiusIncrement, index: CGFloat(index))
+						.modifier(self.makeOrbitEffect(diameter: planetSize + radiusIncrement * CGFloat(index)))
+						.animation(Animation.linear(duration: Double.random(in: 10...100)).repeatForever(autoreverses: false))
         }
     }
+			.onAppear {
+				self.animationFlag.toggle()
+			}
   }
+	
+	func animation(index: Double) -> Animation {
+		return Animation
+						.spring(response: 0.55, dampingFraction: 0.45, blendDuration: 0)
+						.speed(2)
+						.delay(0.075 * index)
+					
+	}
+	
+	func makeOrbitEffect(diameter: CGFloat) -> some GeometryEffect {
+		return OrbitEffect(angle: self.animationFlag ? 2 * .pi : 0, radius: diameter / 2.0)
+	}
+	
+	// Animated by the angle
+	struct OrbitEffect: GeometryEffect {
+		let initialAngle = CGFloat.random(in: 0..<2 * .pi)
+		
+		var angle: CGFloat = 0
+		var radius: CGFloat
+		
+		var animatableData: CGFloat {
+			get { return angle }
+			set { angle = newValue }
+		}
+		
+		func effectValue(size: CGSize) -> ProjectionTransform {
+			let pt = CGPoint(x: cos(angle) * radius, y: sin(angle) * radius)
+			let translation = CGAffineTransform(translationX: pt.x, y: pt.y)
+			return ProjectionTransform(translation)
+		}
+	}
+	
+	// Animated by percentage
+	struct OrbitEffectOld: GeometryEffect {
+		let initialAngle = CGFloat.random(in: 0..<2 * .pi)
+		
+		var percent: CGFloat = 0
+		var radius: CGFloat
+		
+		var animatableData: CGFloat {
+			get { return percent }
+			set { percent = newValue }
+		}
+		
+		func effectValue(size: CGSize) -> ProjectionTransform {
+			let angle = 2 * .pi * percent + initialAngle
+			
+			let pt = CGPoint(x: cos(angle) * radius, y: sin(angle) * radius)
+			
+			return ProjectionTransform(CGAffineTransform(translationX: pt.x, y: pt.y))
+		}
+	}
 }
 
 #if DEBUG

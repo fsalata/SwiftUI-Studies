@@ -28,8 +28,20 @@
 
 import SwiftUI
 
+extension AnyTransition {
+	static var customTransition: AnyTransition {
+		let insertion = AnyTransition.move(edge: .top)
+			.combined(with: .scale(scale: 0.2, anchor: .topTrailing))
+			.combined(with: .opacity)
+		
+		let removal = AnyTransition.move(edge: .top)
+		return .asymmetric(insertion: insertion, removal: insertion)
+	}
+}
+
 struct ContentView: View {
   @State var showMoon: String? = nil
+	let moonAnimation = Animation.default
 
   func toggleMoons(_ name: String) -> Bool {
     return name == showMoon
@@ -52,14 +64,22 @@ struct ContentView: View {
         Spacer()
         if planet.hasMoons {
           Button(action: {
-            // put the button action here
+						withAnimation(.easeInOut) {
+							self.showMoon = self.toggleMoons(planet.name) ? nil : planet.name
+						}
           }) {
             Image(systemName: "moon.circle.fill")
+							.rotationEffect(.degrees(self.toggleMoons(planet.name) ? -50 : 0))
+							.animation(nil)
               .scaleEffect(self.toggleMoons(planet.name) ? 2 : 1)
+							.animation(moonAnimation)
           }
         }
       }
-      // add the toggle MoonList here
+			if toggleMoons(planet.name) {
+				MoonList(planet: planet)
+					.transition(.customTransition)
+			}
     }
   }
 }
