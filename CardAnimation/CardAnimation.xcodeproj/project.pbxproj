@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002BC2FF24A22BE700A5B740 /* BottomCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002BC2FE24A22BE700A5B740 /* BottomCard.swift */; };
 		007BDE8924A13ECA00EA17C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007BDE8824A13ECA00EA17C4 /* AppDelegate.swift */; };
 		007BDE8B24A13ECA00EA17C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007BDE8A24A13ECA00EA17C4 /* SceneDelegate.swift */; };
 		007BDE8D24A13ECA00EA17C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007BDE8C24A13ECA00EA17C4 /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		002BC2FE24A22BE700A5B740 /* BottomCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomCard.swift; sourceTree = "<group>"; };
 		007BDE8524A13ECA00EA17C4 /* CardAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		007BDE8824A13ECA00EA17C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		007BDE8A24A13ECA00EA17C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				007BDE8824A13ECA00EA17C4 /* AppDelegate.swift */,
 				007BDE8A24A13ECA00EA17C4 /* SceneDelegate.swift */,
 				007BDE8C24A13ECA00EA17C4 /* ContentView.swift */,
+				002BC2FE24A22BE700A5B740 /* BottomCard.swift */,
 				007BDE8E24A13ECD00EA17C4 /* Assets.xcassets */,
 				007BDE9324A13ECD00EA17C4 /* LaunchScreen.storyboard */,
 				007BDE9624A13ECD00EA17C4 /* Info.plist */,
@@ -148,6 +151,7 @@
 			files = (
 				007BDE8924A13ECA00EA17C4 /* AppDelegate.swift in Sources */,
 				007BDE8B24A13ECA00EA17C4 /* SceneDelegate.swift in Sources */,
+				002BC2FF24A22BE700A5B740 /* BottomCard.swift in Sources */,
 				007BDE8D24A13ECA00EA17C4 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
